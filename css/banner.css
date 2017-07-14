@@ -1,0 +1,84 @@
+#banner{
+	position: relative;
+	height: 50vh;
+	/*background-image: url('http://i.imgur.com/FIvYDKe.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;*/
+}
+#banner .conteudo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: white;
+}
+#banner img{
+	width: 100%;
+	height: 100%;
+}
+#banner h1{
+	font-size: 1.8em;
+	text-shadow: 2px 2px 2px #222;
+	color: white;
+	text-align: center;
+	margin: 40px 0 20px 0;
+}
+#banner a{
+	width: 200px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	border: 3px solid #f27109;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #f27109;
+	transition: .7s ease;
+}
+#banner p{
+	text-align: center;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 2px #222;
+	font-size: 1.1em;
+}
+#banner a:hover{
+	background-color: transparent;
+	border: 3px solid #ffffff;
+}
+
+/*------contato--------*/
+#pagcontato{
+	position: relative;
+	height: 40vh;
+	/*background-image: url('http://i.imgur.com/FIvYDKe.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;*/
+}
+#pagcontato .conteudo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: white;
+}
+#pagcontato img{
+	width: 100%;
+	height: 100%;
+}
+#pagcontato h1{
+	font-size: 1.8em;
+	text-shadow: 2px 2px 2px #222;
+	color: white;
+	text-align: center;
+	margin: 40px 0 20px 0;
+}
+
+#pagcontato p{
+	text-align: center;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 2px #222;
+	font-size: 1.1em;
+}

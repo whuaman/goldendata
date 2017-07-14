@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<meta charset="UTF-8">
+	<title>GoldenData: BigData, Business Intelligence e Database</title>
+	<meta name="keywords" content="banco, dados, mercado, database, desenvolvimento, software, machine, learning, analise, preditiva, bi, business, intelligence">
+	<meta name="description" content=" Goldendata é uma empresa de consultoria focada em Big data, Business Intelligence e Database. O valor da sua empresa está baseado nos dados e saber usá-los é um grande diferencial.">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:url" content="http://whuaman.esy.es/goldendata/index.html">
+	<meta property="og:title" content="GoldenData: Big data, Business Intelligence e Database">
+	<meta property="og:site_name" content="GoldenData">
+	<meta property="og:description" content="GoldenData é uma empresa formada por profissionais altamente qualificados e com uma vasta experiência no mercado de tecnologia.">
+	<meta property="og:image" content="img/banners/golden_data_empresa3.jpg">
+	<meta property="og:image:type" content="image/jpg">
+	<meta property="og:type" content="website">
+	
+
+	<link rel="icon" href="img/favicon.png" />
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<style>	
+
+		.modal-container{
+			position: fixed;
+			background: #fff;
+			width: 80%;
+			max-width:400px;
+			left: 50%;
+			padding: 15px;
+			border-radius: 5px;
+
+			transform:  translate(-50%, -200%);
+			-webkit-transform: translate(-50%, -200%);
+			-ms-transform: translate(-50%, -200%);
+
+			transition: transform 200ms ease-out;
+			-webkit-transition: -webkit-transform 200ms ease-out;
+
+			z-index: 1000;
+		}
+		.modal:before{
+			content: "";
+			position: fixed;
+			background: rgba(0,0,0,.6);
+			display: none;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 5;
+		}
+		form input, textarea{
+			padding: 9px;
+			width: 100%;
+			border-radius: 4px;
+			border: 1px solid #999;
+			font-family: sans-serif;
+		}
+		form button{
+			background: #f27109;
+			padding: 15px;
+			border: none;
+			border-radius: 5px;
+			width: 100%;
+			display: block;
+			color: #ffffff;
+			margin: 0 auto;
+
+		}
+		.modal:target:before{
+			display: block;
+		}
+		.modal:target .modal-container{
+			top: 5%;
+			transform:  translate(-50%, 0%);
+			-webkit-transform: translate(-50%, 0%);
+			-ms-transform: translate(-50%, 0%);
+		}
+		#modal-close{};
+		
+		label.error{
+			color: red; font-weight: bold; padding: 5px;
+		}
+	</style>
+
+</head>
+<body>
+
+<header>
+	<div class="conteudo">
+		<div class="logo">
+
+		<a href="index.html"><img src="img/logo/logo.png" alt="GoldenData"></a>
+
+		</div><!--logo-->
+
+		<!--botao menu-->
+		<input id="menu-bar" type="checkbox">
+		<label class="icon-menu" for="menu-bar"></label>
+		<!--end do botao menu-->
+		<nav class="menu">
+			<a href="#quemsomos">Quem Somos</a>
+			<a href="servicos.html">Soluções</a>
+			<a href="contato.php">Contato</a>
+		</nav>
+
+	</div><!--conteudo-->
+</header>
+
+<main>
+
+	<section id="banner">
+		<img src="img/banners/servicos.jpg"  alt="Bigdata">
+		<div class="conteudo">
+			<h1>Decisões Inteligentes começam por uma análise de dados</h1>
+			<p>Consultoria e Soluções em Bancos de Dados, Business Intelligence e Big Data</p>
+			<a href="contato.php">Inicie uma consulta&nbsp;&#8594;</a>
+		</div><!--conteudo-->
+	</section>
+
+	<section>
+		<div class="servicos">
+
+			<div class="servicos_itens">
+				<div class="servicos_text">
+					<h2>Bancos de Dados</h2>
+					<a href="servicos.html">Saiba mais&nbsp;&#8594;</a>
+				</div><!--servicos_text-->
+				<figure><img src="img/banners/binario.jpg" width="100%" alt="Banco de Dados"></figure>
+			</div><!--servicos_itens-->
+
+			<div class="servicos_itens">
+				<div class="servicos_text">
+					<h2>Business Intelligence</h2>
+					<a href="servicos.html">Saiba mais&nbsp;&#8594;</a>
+				</div><!--servicos_text-->
+				<figure><img src="img/banners/binario2.jpg" width="100%" alt="Business Intelligence"></figure>
+			</div><!--servicos_itens-->
+		
+			<div class="servicos_itens">
+				<div class="servicos_text">
+					<h2>Desenvolvimento de Software</h2>
+					<a href="servicos.html" >Saiba mais&nbsp;&#8594;</a>
+				</div><!--servicos_text-->
+				<figure><img src="img/banners/binario3.jpg" width="100%" alt="Desenvolvimento de Software"></figure>
+			</div><!--servicos_itens-->
+
+		</div><!--servicos-->
+    </section>
+
+    <section class="clientes">
+		<h2>Conheça nossas soluções e empodere sua área de negócio com tecnologia</h2>
+		<p>Tome melhores decisões baseado em seus dados</p>
+		<ul class="bxslider">
+  				<li><img src="img/servicos/1.png" alt="Consultoria"/></li>
+				<li><img src="img/servicos/2.png" alt="Business Intelligence"/></li>
+				<li><img src="img/servicos/3.png" alt="Banco de dados" /></li>
+  				<li><img src="img/servicos/4.png" alt="Software Persolnalizado"/></li>
+				<li><img src="img/servicos/5.png" alt="Analise preditiva" /></li>
+     	</ul>
+    </section>
+
+		<section class="entreemcontato" style="background-image:url(img/banners/back.jpg);">
+			<div class="conteudo">	
+					<h3>Otimize seu tempo e abandone a planilha &#8594;</h3>
+					<a href="contato.php">Entre em contato&nbsp; &#8594;</a>
+			</div><!--conteudo-->
+		</section>
+
+		<section>
+				<div class="conteudo">
+							<h2>Segmentos de mercado que podem ser beneficiados</h2>
+							<p style="text-align:center; padding:20px;">O valor da sua empresa está baseado nos dados e saber usá-los é um grande diferencial.<br>Veja os segmentos que estão em transformação:</p>
+
+				<div class="segmentos">
+
+						<div class="segmentos_item">
+							<img src="img/icon/predio2.png" width="auto" alt="Mercado Imobiliário">
+							<h3>Mercado Imobiliário</h3>
+						</div><!--segmentos_item-->
+
+						<div class="segmentos_item">
+								<img src="img/icon/laptop2.png" alt="Ecommerce">
+								<h3>Ecommerce</h3>
+						</div><!--segmentos_item-->
+
+						<div class="segmentos_item">
+								<img src="img/icon/teamwork2.png" alt="Recrutamento e Seleção">
+								<h3>Recrutamento e Seleção</h3>	
+						</div><!--segmentos_item-->
+
+						<div class="segmentos_item">
+							<img src="img/icon/telefonia2.png" alt="Telecom">
+							<h3>Telecom</h3>
+						</div><!--segmentos_item-->
+
+						<div class="segmentos_item">
+							<img src="img/icon/credit-card2.png" width="auto" alt="Recuperação de Crédito">
+							<h3>Recuperação de Crédito</h3>
+						</div><!--segmentos_item-->
+
+						<div class="segmentos_item">
+							<img src="img/icon/moda2.png" alt="Setor de varejo">
+							<h3>Setor de varejo</h3>	
+						</div><!--segmentos_item-->
+
+				</div><!--segmentos-->
+
+				</div><!--conteudo-->
+
+		</section>
+
+		<section id="quemsomos" class="empresa">
+				<div class="empresa_item">
+					<h2><strong>A GoldenData</strong></h2>
+					<p>GoldenData é uma empresa formada por profissionais altamente qualificados e com uma vasta experiência no mercado de tecnologia. <br> Experiência comprovada nos setores imobiliário, e-commerce, Telecom, Recuperação de Crédito entre outros. <br>A proposta da GoldenData é prover soluções baseadas em dados, em um ciclo de coleta, armazenamento, análise e visualização a fim de gerar valor que auxiliarão os executivos a tomarem decisões de forma mais assertiva.
+					</p>
+					<a href="contato.php">Entre em contato &#8594;</a>
+				</div><!--empresa_item-->
+				<div class="empresa_imagem">
+					<img src="img/banners/golden_data_empresa3.jpg" alt="Business Intelligence">
+				</div><!--empresa_imagem-->
+		</section>
+
+		<section class="clientes">
+			<h2>Clientes que usam nossas soluções</h2>
+			<ul class="bxslider">
+  				<li><img src="img/clientes/cliente_33.png" alt="Lopes"/></li>
+  				<li><img src="img/clientes/buscape.png" alt="Buscape"/></li>
+  				<li><img src="img/clientes/credigy.png" alt="Credigy"/></li>
+   				<li><img src="img/clientes/prolan.jpg" alt="Prolan"/></li>
+  				<li><img src="img/clientes/vida.jpg" alt="Vida Executiva"/></li>
+     		</ul>
+		</section>
+
+		<section class="artigos">
+			<div class="conteudo">
+				<h5>Acompanhe nossas newsletters</h5>
+				<article>
+					<p><strong><span style="color:#f27109;">GD#1</span> - Você sabe o que é Big Data?</strong><br>
+				O uso do Big Data pode ser uma arma contra os problemas sócio-econômicos... </p>
+					<a href="https://www.getrevue.co/profile/whuaman/issues/golden-data-newsletter-1-14941" target="_blank">Leia mais aqui &#8594;</a>
+				</article>
+			</div><!--conteudo-->
+		</section>
+
+		<section class="inscrevase">
+			<div class="conteudo">
+				<div style="background:white; text-align:center; margin:30px 0 50px 0;">
+						<h3>Cadastre-se e receba informações do mercado de tecnologia</h3><br>
+						<a href="https://www.getrevue.co/profile/whuaman" target="_blank">Inscreva-se aqui &#8594;</a>
+				</div><!--div-->
+			</div><!--conteudo-->
+		</section>
+
+</main>
+
+<footer id="rodape">
+		<div class="conteudo">
+		<img src="img/logo/logo_mini.png" alt="GoldenData">
+			<p>&copy 2017 Copyright - Todos os direitos reservados - <strong>GoldenData</strong> Brasil - São Paulo/SP - CNPJ: 26.266.377/0001­80 - Consultoria e Soluções em Bancos de Dados, Business Intelligence e Big Data | 2017 <br> <br>
+			Decisões Inteligentes começam por uma análise de dados.
+			<br><br> </p>
+		</div><!--conteudo-->
+</footer>
+
+	<!-- jQuery library (served from Google) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<script>
+		$(document).ready(function(){
+  			$('.bxslider').bxSlider({
+          		auto: true,
+         		tickerSpeed: 1500,
+  				prevText: 'prev', 
+  				minSlides: 3,
+  				maxSlides: 4,
+  				slideWidth: 250,
+  				slideMargin: 10
+  				
+  			});
+		});
+	</script>
+
+</body>
+</html>

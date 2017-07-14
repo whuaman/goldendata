@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GoldenData - Serviços</title>
+	<link rel="icon" href="img/favicon.png" />
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<style>	
+
+		.modal-container{
+			position: fixed;
+			background: #fff;
+			width: 80%;
+			max-width:400px;
+			left: 50%;
+			padding: 15px;
+			border-radius: 5px;
+
+			transform:  translate(-50%, -200%);
+			-webkit-transform: translate(-50%, -200%);
+			-ms-transform: translate(-50%, -200%);
+
+			transition: transform 200ms ease-out;
+			-webkit-transition: -webkit-transform 200ms ease-out;
+
+			z-index: 1000;
+		}
+		.modal:before{
+			content: "";
+			position: fixed;
+			background: rgba(0,0,0,.6);
+			display: none;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 5;
+		}
+		form input, textarea{
+			padding: 9px;
+			width: 100%;
+			border-radius: 4px;
+			border: 1px solid #999;
+			font-family: sans-serif;
+		}
+		form button{
+			background: #f27109;
+			padding: 15px;
+			border: none;
+			border-radius: 5px;
+			width: 100%;
+			display: block;
+			color: #ffffff;
+			margin: 0 auto;
+
+		}
+		.modal:target:before{
+			display: block;
+		}
+		.modal:target .modal-container{
+			top:5%;
+			transform:  translate(-50%, 0%);
+			-webkit-transform: translate(-50%, 0%);
+			-ms-transform: translate(-50%, 0%);
+		}
+		#modal-close{}
+		label.error{
+			color: red; font-weight: bold; padding: 5px´;
+		}
+	</style>
+
+</head>
+<body>
+
+<header>
+	<div class="conteudo">
+		<div class="logo">
+		<a href="index.html">
+			<img src="img/logo/logo.png" alt="GoldenData">
+		</a>
+		</div><!--logo-->
+
+		<!--botao menu-->
+		<input id="menu-bar" type="checkbox">
+		<label class="icon-menu" for="menu-bar"></label>
+		<!--end do botao menu-->
+		<nav class="menu">
+			<a href="index.html#quemsomos">Quem Somos</a>
+			<a href="servicos.html">Soluções</a>
+			<a href="contato.php">Contato</a>
+		</nav>
+	</div><!--conteudo-->
+</header>
+
+<main>
+	<section id="banner">
+		<img src="img/banners/servicos.jpg" alt="soluções goldendata">
+		<div class="conteudo">
+			<h1>Nossas Soluções</h1>
+			<p>Consultoria e Soluções em Bancos de Dados, Business Intelligence e Big Data</p>
+		</div><!--conteudo-->
+	</section>
+
+	<section id="solution_lista">
+	<div class="conteudo">
+
+		<div class="solucao">
+
+			<div class="solucao_item">
+				<img src="img/solucoes/consultoria.png" alt="Consultoria">
+			</div><!--solucao_item-->
+
+			<div class="solucao_text">
+				<h1>Consultoria</h1>
+
+				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+
+			</div><!--solucao_text-->
+
+		</div><!--solucao-->
+
+
+		<div class="solucao">
+			<div class="solucao_item">
+				<img src="img/solucoes/db.png" alt="Bancos de Dados">
+			</div><!--solucao_item-->
+			<div class="solucao_text">
+				<h1>Bancos de Dados</h1>
+				<p>Temos soluções completas e estratégias adequadas para o seu negócio.</p>
+				<br>
+				<p class="icon-ok">Monitoramento e Suporte para Bancos de Dados Corporativos. Temos várias formas de contrato no monitoramento e suporte de banco de dados com valores competitivos.</p><br>
+				<p class="icon-ok">Serviços disponíveis 24x7 durante 365 dias do ano. Isso garante a sua equipe focar no desenvolvimento do seu negócio deixando a parte da tecnologia para a GoldenData.</p><br>
+				<p class="icon-ok">Rotinas de Backup para Bancos de Dados Corporativos. Garantindo que suas informações permaneçam protegidas e disponíveis sempre que forem necessárias. Respeitando processos de auditoria, com procedimentos de guarda externa dos seus dados ou armazenamento em nuvem.</p>
+			</div><!--solucao_text-->
+
+		</div><!--solucao-->
+
+		<div class="solucao">
+			<div class="solucao_item">
+				<img src="img/solucoes/soft.png" alt="Desenvolvimento de Software">
+			</div><!--solucao_item-->
+			<div class="solucao_text">
+				<h1>Desenvolvimento de Software</h1>
+				<p>Desenvolvemos softwares costumizados com as necessidades da sua empresa sendo eles:  sistemas para gestão, indústria, vendas, relação com o cliente e automação de processos organizacionais. Faça melhorias constantes, em ciclos ágeis de desenvolvimento, entregando novas funcionalidades para os usuários de forma rápida e confiável. </p>
+				<div class="topicos">
+					<ul>
+						<li class="icon-ok" >Planejamento </li>
+						<li class="icon-ok" >Análise de Requisitos </li>
+						<li class="icon-ok" >Codificação </li>
+					</ul>
+					<ul>
+						<li class="icon-ok" >Testes</li>
+						<li class="icon-ok" >Verificação do Escopo  </li>
+						<li class="icon-ok" >Implantação </li>
+					</ul>
+				</div><!--topicos-->
+			</div><!--solucao_text-->
+
+		</div><!--solucao-->
+
+		<div class="solucao">
+
+			<div class="solucao_item">
+				<img src="img/solucoes/bii.png" alt="Business Intelligence">
+			</div><!--solucao_item-->
+
+			<div class="solucao_text">
+				<h1>Business Intelligence</h1>
+				<p>Em um cenário de negócios de alta performance e extremamente competitivo a gestão de informação através de técnicas de business intelligence e analytics é o diferencial que garantirá o sucesso de sua empresa. Veja as competências da GoldenData:</p>
+				<div class="topicos">
+					<ul>
+						<li class="icon-ok" >Dashboard Executivo </li>
+						<li class="icon-ok" >Integração </li>
+						<li class="icon-ok" >Codificação </li>
+						
+					</ul>
+					<ul>
+						<li class="icon-ok" >Qualidade de Dados</li>
+						<li class="icon-ok" >KPIs</li>
+						<li class="icon-ok" >Self-service BI </li>
+					</ul>
+					
+					<ul>
+						<li class="icon-ok" >Suporte / Ongoing </li>
+						
+					</ul>
+				</div><!--topicos-->
+			</div><!--solucao_text-->
+
+		</div><!--solucao-->
+
+		<div class="solucao">
+			<div class="solucao_item">
+				<img src="img/solucoes/analise.png" alt="Análise Preditiva">
+			</div><!--solucao_item-->
+
+			<div class="solucao_text">
+				<h1>Análise Preditiva</h1>
+				<p>Podemos agregar inteligência preditiva ao seu negócio, ajudando você a prever possiveis tendências de mercado e trazendo consistência às decisões tomadas pelos indivíduos, grupos e sistemas da sua empresa. A GoldenData desenvolve:</p>
+				<div class="topicos">
+					<ul>
+						<li class="icon-ok" >Análise de Cenários </li>
+						<li class="icon-ok" >Algoritmos avançados </li>
+						<li class="icon-ok" >Análise de dados </li>
+						
+					</ul>
+					<ul>
+						<li class="icon-ok" >Análise de Textos </li>
+						<li class="icon-ok" >Análise de Entidade</li>
+						<li class="icon-ok" >Gerenciamento de decisão</li>
+					</ul>
+					
+					<ul>
+						<li class="icon-ok" >Otimização dos negócios </li>
+						
+					</ul>
+				</div><!--topicos-->
+			</div><!--solucao_text-->
+
+		</div><!--solucao-->
+
+	</div><!--conteudo-->
+	</section>
+
+	<section class="entreemcontato" style="background-image:url(img/banners/back.jpg);">
+	<div class="conteudo">	
+			<h3>Agende uma consultoria ainda hoje &#8594;</h3>
+			<a href="contato.php">Entre em contato&nbsp; &#8594;</a>
+	</div><!--conteudo-->
+  	</section>
+</main>
+
+<footer id="rodape">
+		<div class="conteudo">
+		<img src="img/logo/logo_mini.png" alt="GoldenData">
+			<p>&copy 2017 Copyright - Todos os direitos reservados - <strong>GoldenData</strong> Brasil - São Paulo/SP - CNPJ: 26.266.377/0001­80 - Consultoria e Soluções em Bancos de Dados, Business Intelligence e Big Data | 2017 <br> <br>
+			Decisões Inteligentes começam por uma análise de dados.
+			<br><br> </p>
+		</div><!--conteudo-->
+</footer>
+
+	<!-- jQuery library (served from Google) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<script>
+		$(document).ready(function(){
+  			$('.bxslider').bxSlider({
+          auto: true,
+          tickerSpeed: 1500,
+  				prevText: 'prev', 
+  				minSlides: 3,
+  				maxSlides: 4,
+  				slideWidth: 250,
+  				slideMargin: 10
+  				
+  			});
+		});
+	</script>
+</body>
+</html>
